@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F8E8"
+    android:padding="1dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back, Username!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#3C3C3C"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- GridLayout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:rowCount="4">
+
+        <!-- Button: Your Progress -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/btnYourProgress"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/progress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Your Progress"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Button: Daily Planner -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/btnDailyPlanner"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/daily" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Daily Planner"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Button: Support and Community -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/btnSupportCommunity"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/support" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Support and Community"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Button: Health and Wellness -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/btnHealthandWellness"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/health" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Health and Wellness"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Button: With Experts -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/btnWithExperts"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/experts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="With Experts"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Button: Notes -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/btnNotes"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/notes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Notes"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Button: Events and Activities -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="25dp">
+
+            <Button
+                android:id="@+id/btnEventsActivities"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/events" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Events and Activities"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

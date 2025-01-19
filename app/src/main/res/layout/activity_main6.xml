@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Static Map Image -->
+    <ImageView
+        android:id="@+id/staticMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search location (simulated)"
+        android:padding="12dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp" />
+
+    <!-- Save Location Button -->
+    <Button
+        android:id="@+id/saveLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Location"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#689F38"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

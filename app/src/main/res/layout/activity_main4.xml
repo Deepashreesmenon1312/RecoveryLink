@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F8E8">
+
+    <!-- Title for the Journaling Page -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Journal Entry"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#3C3C3C"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input Field for Journal Title -->
+    <EditText
+        android:id="@+id/journalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="18sp"
+
+        android:padding="10dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Input Field for Journal Content -->
+    <EditText
+        android:id="@+id/journalContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Write your thoughts here..."
+        android:textSize="16sp"
+        android:gravity="start|top"
+
+        android:padding="10dp" />
+
+    <!-- Save and View Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#8BC34A"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/viewEntriesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#689F38"
+            android:text="View Entries"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
